@@ -77,3 +77,7 @@ To Run the tests run the following:
 `mvn test`
 
 See [our doc on contributing](https://github.com/simon-data/elastic-freight/blob/master/CONTRIBUTING.md)
+
+# Questions
+
+Questions, thoughts, and ideas can be opened as issues on this repo or can be sent to opensource@simondata.com.
