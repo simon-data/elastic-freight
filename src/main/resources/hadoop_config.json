@@ -1,0 +1,47 @@
+[
+  {
+    "Classification": "mapred-site",
+    "Properties": {
+      "mapreduce.map.log.level": "INFO",
+      "mapreduce.map.cpu.vcores": "1",
+	  "mapreduce.reduce.cpu.vcores": "1",
+	  "mapreduce.reduce.memory.mb": "14336",
+	  "mapreduce.task.io.sort.mb": "200",
+	  "mapreduce.task.io.sort.factor": "20",
+	  "mapreduce.reduce.shuffle.parallelcopies": "10",
+	  "mapreduce.map.speculative": "False",
+	  "mapreduce.reduce.speculative": "False",
+	  "mapreduce.job.reduce.slowstart.completedmaps": "0.99",
+	  "mapreduce.fileoutputcommitter.algorithm.version": "2"
+    }
+  },
+  {
+    "Classification": "core-site",
+    "Properties": {
+  		"fs.s3n.block.size": "1073741824",
+        "fs.s3.block.size": "1073741824",
+        "io.file.buffer.size": "131072"
+	}
+  },
+  {
+    "Classification": "yarn-site",
+    "Properties": {
+    	"yarn.nodemanager.resource.memory-mb": "26625",
+		"yarn.nodemanager.resource.cpu-vcores": "10",
+		"yarn.scheduler.minimum-allocation-mb": "1024",
+		"yarn.nodemanager.vmem-check-enabled": "False",
+		"yarn.nodemanager.pmem-check-enabled": "False",
+		"yarn.log-aggregation-enable": "True",
+		"yarn.log-aggregation.retain-seconds": "-1"
+	}
+  },
+  {
+    "Classification": "hdfs-site",
+    "Properties": {
+  		"dfs.client.read.shortcircuit": "True",
+		"dfs.client.read.shortcircuit.streams.cache.size": "1000",
+		"dfs.client.read.shortcircuit.streams.cache.expiry.ms": "10000",
+		"dfs.domain.socket.path": "/var/run/hadoop-hdfs/dn._PORT"
+	}
+  }
+]
